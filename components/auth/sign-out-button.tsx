@@ -7,7 +7,7 @@ export default function SignOutButton() {
   return (
     <Button
       onClick={() => signOut()}
-      className="bg-red-500 hover:bg-red-600 text-white shadow-lg border border-red-700 transition-colors duration-200"
+      className="bg-gray-700 hover:bg-gray-800 text-white transition-colors duration-200"
       aria-label="Sign Out"
     >
       Sign Out

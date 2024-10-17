@@ -1,5 +1,3 @@
-'use client'
-
 import { useState } from 'react'
 
 type Message = {
@@ -30,7 +28,7 @@ export function useChat() {
     setInput('')
 
     try {
-      const response = await fetch('http://localhost:4000/llm-query', {
+      const response = await fetch('/api/llm-query', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -39,7 +37,8 @@ export function useChat() {
       })
 
       if (!response.ok) {
-        throw new Error(`Server responded with status ${response.status}`)
+        const errorData = await response.json()
+        throw new Error(errorData.message || `Server responded with status ${response.status}`)
       }
 
       const data = await response.json()
@@ -51,7 +50,7 @@ export function useChat() {
         content: data.answer,
       }
       setMessages((prev) => [...prev, assistantMessage])
-    } catch (error) {
+    } catch (error: any) {
       console.error('Error in API call:', error)
       // Optionally, add an error message to the chat
       const errorMessage: Message = {

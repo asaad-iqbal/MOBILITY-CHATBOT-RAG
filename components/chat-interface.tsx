@@ -1,4 +1,4 @@
-'use client'
+// components/chat-interface.tsx
 
 import { useState, useEffect, useRef } from 'react'
 import { Button } from "@/components/ui/button"
@@ -10,6 +10,7 @@ import { Send, Star } from "lucide-react"
 import { useSession } from "next-auth/react"
 import SignOutButton from '@/components/auth/sign-out-button'
 import { signIn } from 'next-auth/react'
+
 
 export default function ChatInterface() {
   const { data: session, status } = useSession()
@@ -53,12 +54,7 @@ export default function ChatInterface() {
   }
 
   return (
-    <div className="w-full max-w-md mx-auto p-4 relative">
-      {/* Sign Out Button with higher z-index */}
-      <div className="absolute top-4 right-4 z-20">
-        <SignOutButton />
-      </div>
-      
+    <div className="w-full max-w-md mx-auto p-4 relative">      
       {/* Background Stars */}
       <div className="absolute inset-0 overflow-hidden">
         {stars.map((star) => (
