@@ -145,51 +145,6 @@ yarn dev
 
 Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
 
-## Project Structure
-
-```
-share-mobility-chatbot/
-├── app/
-│   ├── api/
-│   │   └── auth/
-│   │       ├── [...nextauth]/
-│   │       │   └── route.ts
-│   │       └── signup/
-│   │           └── route.ts
-│   ├── auth/
-│   │   ├── signin/
-│   │   │   └── page.tsx
-│   │   └── signup/
-│   │       └── page.tsx
-│   ├── components/
-│   │   ├── auth/
-│   │   │   ├── sign-in-button.tsx
-│   │   │   └── sign-out-button.tsx
-│   │   ├── chat-interface.tsx
-│   │   ├── providers.tsx
-│   │   └── theme-toggle.tsx
-│   ├── lib/
-│   │   └── prisma.ts
-│   ├── page.tsx
-│   └── layout.tsx
-├── prisma/
-│   ├── schema.prisma
-│   └── ...
-├── public/
-│   └── ...
-├── styles/
-│   └── globals.css
-├── package.json
-├── tsconfig.json
-└── README.md
-```
-
-## Authentication
-
-### GitHub OAuth
-
-Users can sign in using their GitHub accounts, providing a seamless and secure authentication method.
-
 **Setup Steps:**
 
 1. **Register a GitHub OAuth App:**
