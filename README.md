@@ -1,7 +1,7 @@
 ```markdown
-# Share Mobility Chatbot
+# Mobility Chatbot
 
-Welcome to **Share Mobility Chatbot**, a feature-rich Next.js application that provides seamless chat interactions for users. This application leverages modern authentication methods, including GitHub OAuth and traditional email/password sign-up and sign-in, ensuring both security and flexibility for its users.
+Welcome to **Mobility Chatbot**, a feature-rich Next.js application that provides seamless chat interactions for users. This application leverages modern authentication methods, including GitHub OAuth and traditional email/password sign-up and sign-in, ensuring both security and flexibility for its users.
 
 ## Table of Contents
 
