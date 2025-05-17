@@ -347,7 +347,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-© 2023 Share Mobility Chatbot. All rights reserved.
+© 2023 Mobility Chatbot. All rights reserved.
 ```
 
 ---
